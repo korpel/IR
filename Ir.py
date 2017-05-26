@@ -3,12 +3,21 @@
 
 import urllib, urllib2
 from bs4 import BeautifulSoup
-from supporting import struc
 import requests
 import sys
+'''
+import SimpleHTTPServer
+import SocketServer
 
+PORT = 8888
 
+Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
 
+httpd = SocketServer.TCPServer(("", PORT), Handler)
+
+print "serving at port", PORT
+httpd.serve_forever()
+'''
 
 
 googleDict = dict()

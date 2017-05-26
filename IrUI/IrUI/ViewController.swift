@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
 
@@ -72,6 +73,7 @@ class ViewController: UIViewController {
                 catch {print("Cant write data to IrEngines.txt")}
                 }
             }
+    
     
 }
 
