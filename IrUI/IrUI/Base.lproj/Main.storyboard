@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IrUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4mn-gq-W5l">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eg6-hF-RI9">
+                                <rect key="frame" x="156" y="356" width="62" height="30"/>
+                                <state key="normal" title="GOOGLE"/>
+                                <connections>
+                                    <action selector="googleFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNQ-1K-rOp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPH-OU-Wcn">
+                                <rect key="frame" x="161" y="394" width="52" height="30"/>
+                                <state key="normal" title="YAHOO"/>
+                                <connections>
+                                    <action selector="yahooFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIZ-kI-MyE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Z-YA-0Ra">
+                                <rect key="frame" x="169" y="432" width="36" height="30"/>
+                                <state key="normal" title="BING"/>
+                                <connections>
+                                    <action selector="bingFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufh-Dh-aRE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpI-61-F8E">
+                                <rect key="frame" x="167" y="617" width="40" height="30"/>
+                                <state key="normal" title="SEND">
+                                    <color key="titleColor" red="1" green="0.074740148470000003" blue="0.078314927450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="send:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t37-nJ-vWE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBp-dA-z61">
+                                <rect key="frame" x="164" y="280" width="47" height="30"/>
+                                <state key="normal" title="CLEAR">
+                                    <color key="titleColor" red="1" green="0.074740148470000003" blue="0.078314927450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4qb-bk-2Dg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25111716740000001" green="1" blue="0.26350602369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4mn-gq-W5l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4gR-1c-qmm"/>
+                            <constraint firstItem="cBp-dA-z61" firstAttribute="centerX" secondItem="4mn-gq-W5l" secondAttribute="centerX" id="7bE-X4-18f"/>
+                            <constraint firstAttribute="bottom" secondItem="bpI-61-F8E" secondAttribute="bottom" constant="20" symbolic="YES" id="AUI-HF-Yny"/>
+                            <constraint firstItem="Eg6-hF-RI9" firstAttribute="top" secondItem="4mn-gq-W5l" secondAttribute="bottom" constant="8" symbolic="YES" id="Fzu-Hj-i4f"/>
+                            <constraint firstItem="4mn-gq-W5l" firstAttribute="top" secondItem="cBp-dA-z61" secondAttribute="bottom" constant="8" symbolic="YES" id="JeI-K5-t3V"/>
+                            <constraint firstItem="Z8Z-YA-0Ra" firstAttribute="top" secondItem="iPH-OU-Wcn" secondAttribute="bottom" constant="8" symbolic="YES" id="MHn-mY-Qkh"/>
+                            <constraint firstItem="bpI-61-F8E" firstAttribute="centerX" secondItem="Z8Z-YA-0Ra" secondAttribute="centerX" id="RPN-5O-gtf"/>
+                            <constraint firstItem="4mn-gq-W5l" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="S3j-Lh-WXR"/>
+                            <constraint firstItem="iPH-OU-Wcn" firstAttribute="top" secondItem="Eg6-hF-RI9" secondAttribute="bottom" constant="8" symbolic="YES" id="ZnT-Do-hKp"/>
+                            <constraint firstItem="iPH-OU-Wcn" firstAttribute="centerX" secondItem="Z8Z-YA-0Ra" secondAttribute="centerX" id="eRj-bl-6HE"/>
+                            <constraint firstItem="Eg6-hF-RI9" firstAttribute="centerX" secondItem="iPH-OU-Wcn" secondAttribute="centerX" id="f2w-0x-zFY"/>
+                            <constraint firstItem="4mn-gq-W5l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rXF-7w-nia"/>
+                            <constraint firstItem="4mn-gq-W5l" firstAttribute="centerX" secondItem="Eg6-hF-RI9" secondAttribute="centerX" id="x0r-5y-HmA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bingButton" destination="Z8Z-YA-0Ra" id="Mjf-Lo-NAq"/>
+                        <outlet property="googleButton" destination="Eg6-hF-RI9" id="7tx-TC-1Yk"/>
+                        <outlet property="textView" destination="4mn-gq-W5l" id="zjH-es-rEO"/>
+                        <outlet property="yahooButton" destination="iPH-OU-Wcn" id="rZx-eT-ZKG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
